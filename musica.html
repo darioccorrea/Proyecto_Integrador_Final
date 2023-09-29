@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilosmusica.css">
+    </head>
+
+<style>
+
+        .contenedor {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+</style>  
+
+ 
+    <br>
+    <h1>Mi música</h1>
+    <h2>Mis cantantes favoritos</h2>
+    <br>
+
+   
+<nav class="navbar navbar-expand-md navbar-light" style="background-color: #cce7fa;"">
+    <div class="container-fluid">
+
+      
+<button class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#menu" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+ </button>
+
+ <div class="collapse navbar-collapse" id="menu">
+       
+    <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+            <a class="nav-link active" href="index.html">INICIO</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="viajes.html">VIAJES</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="musica.html">MÚSICA</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="contacto.html">CONTACTO</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="registrate.html">REGISTRATE</a>
+        </li>
+    </ul>
+ </div>
+</div>
+</nav>
+
+    <br>
+
+    
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<br>
+    <div class="contenedor">
+    <h3><i>Vota por tu cantante favorito!</i></h3>
+    <br>       
+<main>
+      <article>
+            <section>
+                <h4>Madonna - Into The Groove</h4> 
+                <video width="640" height="480" controls> <source src="videos/Madonna - Into The Groove.mp4"> type="video/mp4"> </video> <br>                                    
+                       
+                         
+                 
+                                        
+                                                  
+                                          
+                    <button class="like_btn">
+                        <span id="icon"><i class="far fa-thumbs-up"></i></span>
+                        <span id="count">99</span> Me Gusta
+                 </button>  
+                
+                 <script>
+                    
+                         const likeBtn = document.querySelector(".like_btn");
+                         let likeIcon = document.querySelector("#icon");
+                         let count = document.querySelector("#count");
+
+                         let clicked = false;
+
+                         likeBtn.addEventListener("click", () => {
+                             if (!clicked) {
+                                       clicked = true;
+                                       likeIcon.innerHTML = `<i class="fas fa-thrumbs-up"></i>`;
+                                       count.textContent++;
+                     
+                                       } 
+                             else {
+                                   clicked = false;
+                                   likeIcon.innerHTML = `<i class="fas fa-thrumbs-up"></i>`;
+                                   count.textContent--;
+                                  } 
+
+                        });
+                    
+                </script>
+
+
+
+                <p>Into the Groove es una canción publicada para promocionar la película de 1985 <a href="https://www.filmaffinity.com/ar/film747351.html" target="_blank">Buscando desesperadamente a Susan.</a>
+                </p>
+
+            </section>
+            <hr>
+            <br>
+            <section>
+                <h4>Michael Jackson - Billie Jean</h4>
+                    <video width="640" height="480" controls> <source src="videos/Michael Jackson - Billie Jean.mp4"> type="video/mp4"> </video> <br>                              
+                                          
+                    <button class="like_btn">
+                        <span id="icon"><i class="far fa-thumbs-up"></i></span>
+                        <span id="count">99</span> Me Gusta
+                 </button>  
+                
+                               <p>Billie Jean alcanzó el número uno en el Billboard Hot 100, encabezó la lista Billboard Hot Black Singles en tres semanas y se convirtió en el sencillo número uno de mayor crecimiento de Jackson.
+                </p>
+            
+            
+            </section>
+            <hr>
+
+            <section>
+                <br>
+                <h4>Depeche Mode - Just Can't Get Enough</h4>
+                    <video width="640" height="480" controls> <source src="videos/Depeche Mode - Just Can't Get Enough.mp4"> type="video/mp4"> </video> <br>                              
+                                          
+                    <button class="like_btn">
+                        <span id="icon"><i class="far fa-thumbs-up"></i></span>
+                        <span id="count">99</span> Me Gusta
+                 </button>  
+                
+                               <p>Just Can't Get Enough es una canción compuesta por Vince Clarke, quien abandonó Depeche Mode a fines del años 1981 para formar posteriormente <a href=https://www.erasureinfo.com target="_blank">Erasure.</a>
+                </p>
+            </section>
+            <hr>
+        
+        
+        <br>     
+        
+        
+        <section>
+            <h4>Duran Duran - The Wild Boys</h4>
+                <video width="640" height="480" controls> <source src="videos/Duran Duran - The Wild Boys.mp4"> type="video/mp4"> </video> <br>                              
+                                      
+                <button class="like_btn">
+                    <span id="icon"><i class="far fa-thumbs-up"></i></span>
+                    <span id="count">99</span> Me Gusta
+             </button>  
+            
+                           <p>El video costó más de un millón de dólares, ya que se realizó en los Pinewood Studios, dónde se filmaron las películas de James Bond. 
+            </p>
+
+        </section>
+        <hr>
+         
+
+
+                   
+           
+</article>
+</main>
+
+<br>
+
+
+<footer class="footer">
+        &copy; Todos los derechos reservados - 2023
+</footer>
+
+</div>
+
+</body>
+
+</html>
+

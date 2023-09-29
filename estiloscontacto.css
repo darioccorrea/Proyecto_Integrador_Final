@@ -1,0 +1,38 @@
+h1 {
+    color:rgb(60, 166, 253);
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+h2 {
+  color:rgb(250, 133, 55);
+  font-size: 30px;
+  text-align: center;
+}
+
+i {
+  font-size: 25px;
+}
+
+p {
+  color: rgb(3, 3, 3);
+  font-size: 20px;
+  text-align: center;
+}
+
+body {
+    background-color:rgb(247, 219, 208);
+}
+
+footer {
+
+  display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: rgb(2, 2, 2);
+}
+
+
+

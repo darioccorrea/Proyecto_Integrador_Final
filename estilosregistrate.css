@@ -1,0 +1,54 @@
+h1 {
+      color:rgb(6, 226, 123);
+      font-size: 50px;
+      text-align: center;
+}
+
+
+h2 {
+    color:rgb(7, 156, 214);
+    font-size: 30px;
+    text-align: center;
+}
+
+h4 {
+    color:rgb(194, 181, 3);
+    font-size: 20px;
+    text-align: center;
+}
+
+i {
+    font-size: 25px;
+  }
+
+p {
+    color: rgb(3, 3, 3);
+    font-size: 20px;
+    width: 618px;
+    text-align: left;
+}
+
+body {
+      background-color:rgb(241, 252, 158);
+      
+}
+
+
+  
+
+
+footer {
+
+display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: rgb(2, 2, 2);
+}
+
+
+
+
+
+
+
